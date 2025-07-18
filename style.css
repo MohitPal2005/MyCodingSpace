@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+
+nav {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+button {
+  background: #007bff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.code-block {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f92672;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}

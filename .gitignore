@@ -1,0 +1,18 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules if any (optional)
+node_modules/
+
+# Ignore logs (optional)
+*.log
+
+# Ignore environment files (optional)
+.env
+
+# Ignore any IDE/editor config files (optional)
+.vscode/
+.idea/
+
+# Do NOT ignore your snippets, index.html, css, js files — keep them tracked!
