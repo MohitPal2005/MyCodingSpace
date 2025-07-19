@@ -60,12 +60,25 @@ async function loadSnippets(language) {
 
       const block = document.createElement('div');
       block.className = 'code-block';
+
+      const ext = filename.split('.').pop().toLowerCase();
+
+      let langClass = '';
+      if (ext === 'cpp') langClass = 'language-cpp';
+      else if (ext === 'py') langClass = 'language-python';
+      else if (ext === 'html' || ext === 'css') langClass = 'language-markup';
+
       block.innerHTML = `
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
         <h3>${filename}</h3>
-        <pre><code>${escapeHtml(code)}</code></pre>
+        <pre><code class="${langClass}">${escapeHtml(code)}</code></pre>
       `;
+
       container.appendChild(block);
+
+      // Tell Prism to highlight the newly added code block
+      Prism.highlightElement(block.querySelector('code'));
+
     } catch (err) {
       console.error(err);
       const errorBlock = document.createElement('div');
